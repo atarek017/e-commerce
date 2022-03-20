@@ -1,3 +1,4 @@
+import 'package:e_commerce_app_mvc/logic/binding/auth_binding.dart';
 import 'package:e_commerce_app_mvc/view/screens/auth/login_screen.dart';
 import 'package:e_commerce_app_mvc/view/screens/auth/singup_screen.dart';
 import 'package:e_commerce_app_mvc/view/screens/welcome_screen.dart';
@@ -18,6 +19,7 @@ class AppRoutes {
     GetPage(
       name: Routes.signupScreen,
       page: () =>  SignupScreen(),
+      binding: AuthBinding()
     ),
   ];
 }

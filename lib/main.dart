@@ -1,4 +1,5 @@
 import 'package:e_commerce_app_mvc/routes/routes.dart';
+import 'package:e_commerce_app_mvc/utils/theam.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemesApp.light,
       initialRoute: AppRoutes.welcome,
       getPages: AppRoutes.routes,
     );
